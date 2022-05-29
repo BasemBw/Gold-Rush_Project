@@ -1,0 +1,60 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+.container {
+  width: 900px;
+  height: 700px;
+  background-color: aqua;
+}
+
+.navbar{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 50px;
+    height: 40px;
+}
+input{
+    width: 100%;
+    height: 100%;
+}
+button{
+    width: 100%;
+    height: 100%;
+}
+select{
+    width: 100%;
+    height: 100%;
+}
+.playfiled{
+    margin-top: 10px;
+    display: grid;
+     width: 100%;
+     height: 650px;
+}
+.part{
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+    display: flex;
+    border: 0.5px solid black;
+    justify-content: center;
+    align-items: center;
+}
+.coins{
+    width: 30px;
+    height: 30px;
+}
+.players{
+    width: 45px;
+    height: 45px;
+}
+.walls{
+    width: 100%;
+    height: 100%;
+}

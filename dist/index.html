@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gold Rush</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div><input placeholder="player 1 name :" /></div>
+            <div><input placeholder="player 2 name" /></div>
+            <div><button onclick=startPLay()>start</button></div>
+            <select name="select" id="rangeOptions">
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+        </div>
+        <div class="playfiled">
+
+        </div>
+    </div>
+
+
+    <script id="template" type="text/x-handlebars-template">
+        {{#each Matrix}}
+            {{#each this}}
+                    <div class="part">
+                        {{#CheckCoin this}}
+                          
+                        {{else}}
+            
+                        {{/CheckCoin }}
+                    </div>
+            {{/each}}
+        {{/each}}
+    </script>
+
+    <script src="./handlebars/dist/handlebars.js"></script>
+    <script src="./jquery/dist/jquery.js"></script>
+    <script src="Matrix.js"></script>
+    <script src="GoldRush.js"></script>
+    <script src="Renderer.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
